@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { View, ScrollView, StyleSheet, Text, TextInput, Pressable, Alert } from 'react-native';
+import { View, ScrollView, StyleSheet, Text, TextInput, Pressable, Alert, Image} from 'react-native';
 
 export default function App() {
   return (
@@ -63,6 +63,10 @@ export default function App() {
         </Pressable>
       </ScrollView>
 
+      <Image
+        source={require('./assets/logo.png')}
+        style={styles.logo}
+      />
       <StatusBar style="auto" />
     </View>
   );
